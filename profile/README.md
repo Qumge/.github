@@ -18,6 +18,8 @@ Find a Cap for your task, inspect its inputs, deliverables and price, then let y
 npx skills add Qumge/qumge-skill
 ```
 
+New to skills? Follow the [installation and first-search guide](https://qumge.com/en/docs/install) for your agent. Searching needs no account or top-up.
+
 ## Publish a capability
 
 Bring an existing API, MCP tool, CLI or business workflow. The **qumge-publish** skill helps your coding agent inspect the project, define a complete-result contract, run local preflight, and prepare the integration. Use your existing deployment tools, then register, test and publish through Qumge MCP within your authorization.

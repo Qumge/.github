@@ -18,6 +18,8 @@
 npx skills add Qumge/qumge-skill
 ```
 
+第一次安装？按[安装与首次搜索指南](https://qumge.com/zh/docs/install)选择你的 Agent。搜索不需要账户或充值。
+
 ## 发布能力
 
 带上你已有的 API、MCP 工具、CLI 或业务工作流。**qumge-publish** skill 帮助编程 Agent 分析项目、定义完整结果合同、运行本地预检并准备接入。沿用项目已有工具部署，再通过 Qumge MCP 在你的授权范围内注册、测试和发布。
