@@ -1,37 +1,51 @@
-# Qumge
+# Qumge — Capability Store for Agents
 
-We build tools for AI agents and the people who use them. Everything we make is at **[qumge.com/products](https://qumge.com/en/products)**.
+[English](README.md) | [简体中文](README.zh-CN.md)
 
-## Platform
+**Give your agent a task. Get a complete result.**
 
-**[Qumge](https://qumge.com)** is the capability store for AI agents. Your agent finds hosted capabilities and pays per call from one balance. The same balance buys 400+ models behind one OpenAI-compatible key. Developers publish their own service and keep 80% of every call.
+[Qumge](https://qumge.com) helps agents find and call hosted capabilities: choose what a task delivers, check its price, and pay from one balance. Developers can turn an existing service or workflow into a capability others can discover and use.
 
-- [qumge-skill](https://github.com/Qumge/qumge-skill): the skill that teaches Claude Code, Cursor, Codex or any agent to use Qumge.
-- [qumge-mcp](https://github.com/Qumge/qumge-mcp): the hosted MCP server at `https://qumge.com/mcp`. Nothing to install.
+## Use a capability
 
-## AI coworker
+Find a Cap for your task, inspect its inputs, deliverables and price, then let your agent call it. Managed capabilities are built around a complete, usable result, with job progress and a delivery receipt.
 
-**[Marlo](https://qumge.com/en/p/marlo)** is an open-source desktop AI coworker that delivers finished work, not chat. Repo: [marlo](https://github.com/Qumge/marlo).
+- **[Explore the Capability Store](https://qumge.com/en/caps)**
+- **[Install the Qumge skill](https://github.com/Qumge/qumge-skill)** for Claude Code, Cursor, Codex and other skill-compatible agents.
+- **[Connect Qumge MCP](https://github.com/Qumge/qumge-mcp)** at `https://qumge.com/mcp`.
 
-## Products your agent can use
+```bash
+npx skills add Qumge/qumge-skill
+```
 
-Each of these comes with a skill and an MCP server.
+## Publish a capability
 
-| Product | What it does | Agent access |
-|---|---|---|
-| [AutoWhisper](https://autowhisper.xyz) | An AI CMO that researches, creates and publishes marketing content | [skill](https://github.com/Qumge/autowhisper-skill) · [MCP](https://github.com/Qumge/autowhisper-mcp) |
-| [37Soul](https://37soul.com) | AI characters with their own personality, look and memories | [skill](https://github.com/Qumge/37soul-skill) · [MCP](https://github.com/Qumge/37soul-mcp) |
-| [SpeakPen](https://speakpen.app) | Voice notes that land in your Obsidian vault as Markdown | [skill](https://github.com/Qumge/speakpen-skill) · [MCP](https://github.com/Qumge/speakpen-mcp) |
+Bring an existing API, MCP tool, CLI or business workflow. The **qumge-publish** skill helps your coding agent inspect the project, define a complete-result contract, run local preflight, and prepare the integration. Use your existing deployment tools, then register, test and publish through Qumge MCP within your authorization.
 
-## Open source, self-hosted
+```bash
+npx skills add Qumge/qumge-skill --full-depth --skill qumge-publish
+```
 
-- **[Aprove AI](https://qumge.com/en/p/aprove-ai)**: project operations covering approvals, orders, invoices and expenses. Repo: [aprove-ai](https://github.com/Qumge/aprove-ai).
-- **[MuseFlow PLM](https://qumge.com/en/p/museflow)**: manufacturing PLM with BOM and document release control. Repo: [museflow-plm](https://github.com/Qumge/museflow-plm).
+You run the service; Qumge provides discovery, invocation, orders and settlement. Installing the skill does not automatically host a local CLI or publish your project.
 
-## Apps
+[Developer skill and publishing guide →](https://github.com/Qumge/qumge-skill/tree/main/skills/qumge-publish)
 
-[Tali](https://tali.run) (exam prep from your own material) and small iPhone apps that each do one thing: [StreaksChain](https://qumge.com/en/p/chain), [SquatStreak](https://qumge.com/en/p/squatstreak), [FlowGrid](https://qumge.com/en/p/flowgrid), [PushCount](https://qumge.com/en/p/pushcount), [ScanMind](https://qumge.com/en/p/scanmind) and [SnapClean](https://qumge.com/en/p/snapclean).
+## Model access for your agent
+
+Use the same Qumge account and balance to access models through an OpenAI-compatible API. Model inference uses the model API; MCP helps your agent discover available models and capabilities.
+
+[Models and integration documentation →](https://qumge.com/en/docs)
+
+## Open-source entry points
+
+| Repository | Purpose |
+|---|---|
+| [qumge-skill](https://github.com/Qumge/qumge-skill) | Two skills: use capabilities with **qumge**, or publish them with **qumge-publish**. |
+| [qumge-mcp](https://github.com/Qumge/qumge-mcp) | Connection guides and registry metadata for the shared hosted MCP. |
+| [qumge-code](https://github.com/Qumge/qumge-code) | A terminal coding agent powered by Qumge models and capabilities. |
+
+[Other Qumge products and projects →](https://qumge.com/en/products)
 
 ---
 
-Contact: xnjiang@qumge.com · Shanghai, China
+[Website](https://qumge.com) · [Documentation](https://qumge.com/en/docs) · [Agent index](https://qumge.com/llms.txt) · Contact: xnjiang@qumge.com
